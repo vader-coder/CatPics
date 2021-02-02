@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cats Everywhere!</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    
+
+</head>
+
+<body>
+    {% block content %}
+    <div id="banner">
+        <h1>cats everywhere</h1>
+        <p class="lead">We're bringing cats to the internet. Free. Cute. Awesome.</p>
+    </div>
+    <div id="emailform">
+        <form action="/signup" method="post">
+            <input type="text" name="email"></input>
+            <input type="submit" value="Signup"></input>
+        </form>
+    </div>
+    {% endblock %}
+    <p class="lead">author: {{author}}</p>
+</body>
+
+</html>
